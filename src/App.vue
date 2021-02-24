@@ -1,26 +1,44 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+        <div>
+            <Dealer msg="Please, place your bet"/>
+        </div>
+        <div>
+            <Player/>
+        </div>
+        <div>
+            <Deck/>
+        </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+    import Player from './components/Player'
+    import Deck from './components/Deck'
+    import Dealer from './components/Dealer'
 
-export default {
-  name: 'App',
-  components: {
-    HelloWorld
-  }
-}
+    export default {
+        name: 'App',
+        components: {
+            Player,
+            Dealer,
+            Deck
+        }
+    }
 </script>
 
 <style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
+    #app {
+
+        background-image: url('assets/q02th.jpg');
+        background-size: cover;
+        overflow: hidden;
+        padding-bottom: 48%;
+        /*img height / img width = 1200 / 1600*/
+        height: 0;
+
+        font-family: Avenir, Helvetica, Arial, sans-serif;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+        text-align: center;
+        color: white;
+    }
 </style>
